@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Escrow For Goods DApp</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Exchange contract</h1>
+      <p>Your decentralized solution for secure transactions.</p>
+    </header>
+
+    <section class="deploy-section">
+      <h2>Deploy contract</h2>
+      <form id="deployForm">
+        <div class="form-group">
+          <label for="sellerAddress">Seller Address:</label>
+          <input type="text" id="sellerAddress" placeholder="Enter Seller Address" required />
+        </div>
+
+        <div class="form-group">
+          <label for="courierAddress">Courier Address:</label>
+          <input type="text" id="courierAddress" placeholder="Enter Courier Address" required />
+        </div>
+
+        <div class="form-group">
+          <label for="courierFee">Courier Fee (ETH):</label>
+          <input type="text" id="courierFee" placeholder="Enter Courier Fee in ETH" required />
+        </div>
+
+        <div class="form-group">
+          <label for="amount">Total Amount (ETH):</label>
+          <input type="text" id="amount" placeholder="Enter Total Amount in ETH" required />
+        </div>
+
+        <button type="submit" class="btn-primary">Deploy Contract</button>
+      </form>
+      <div id="deploymentStatus" class="status"></div>
+    </section>
+
+    <section class="wallet-section">
+      <button id="connectWallet" class="btn-secondary">Connect Wallet</button>
+      <div id="status" class="status">Connect your wallet to interact with the contract.</div>
+    </section>
+
+    <section class="actions-section">
+      <h2>Actions</h2>
+      <button id="confirmDelivery" class="btn-primary">Confirm Delivery (Courier)</button>
+      <button id="raiseDispute" class="btn-warning">Raise Dispute (Buyer)</button>
+    </section>
+
+    <section class="balance-section">
+      <h2>Contract Balance</h2>
+      <button id="getBalance" class="btn-secondary">Get Contract Balance</button>
+      <div id="balanceOutput">Balance: <span>0</span> ETH</div>
+    </section>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/web3/dist/web3.min.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
