@@ -26,5 +26,16 @@ Išmaniąją sutartį kūriau Remix IDE platformos pagalba, ją testavau lokalia
 
 <img width="922" alt="testinis tinklas" src="https://github.com/user-attachments/assets/152fab08-ca09-4dc9-bd8f-c027a37b4f4c" />
 
+# Kaip naudotis išmaniosios sutarties puslapiu
 
-
+1. Atsisiųskite iš naujausio releaso esantį .rar failą.
+2. Extractinkite visus failus i naują aplankalą kompiuteryje.
+3. Atsidarykite komandinę eilutę.
+4. Jame parašykite cd "Vieta kurioje yra failai ir aplankalas", pavyzdžiui cd C:\Users\YourUser\OneDrive\Desktop\New folder\BGT-smart-contract-0.1\kontraktas ir spauskite Enter klavišą.
+5. Tada, komandinėje eilutėje įveskite šią komandą - "python -m http.server" ir spauskite Enter klavišą.
+6. Įeikite į norimą naršyklę ir paieškoje suveskite šį URL: http://localhost:8000 ir spauskite Enter klavišą.
+7. Norint ištestuoti sutarties veikimą turite turėti bent 3 Metamask paskyras su jomis esančiomis Sepolia Eth monetomis.
+8. Spauskite mygtuką "Connect wallet" ir prisijunkite prie Metamask piniginės.
+9. Suvedę pirmus 4 reikiamus laukus spauskite mygtuką "Deploy contract".
+10. Pakeiskite savo Metamask paskyrą į "Courier" adreso paskyrą ir spauskite mygtuką "Confirm Delivery".
+11. Norint pamatyti savo sudarytą kontraktą nueikite į šį puslapį - https://sepolia.etherscan.io ir paspaudę "Blockchain" ir "Transactions" paieškos lauke įveskite sutarties numerį.
